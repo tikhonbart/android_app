@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".word_practice">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.mobiledesign.ui.main.ActivityLoginFragment"
+        android:layout_width="410dp"
+        android:layout_height="70dp"
+        android:background="@color/purple"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/purple"
+        android:onClick="onbackButtonClick"
+        app:srcCompat="@drawable/back_button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/choise1"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+
+        android:text="Корабль"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/choise2"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Машина"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choise1" />
+
+    <Button
+        android:id="@+id/choise3"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Самолет"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choise2" />
+
+    <Button
+        android:id="@+id/choise4"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Велосипед"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choise3" />
+
+    <Button
+        android:id="@+id/submit"
+
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="112dp"
+
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Check"
+        android:onClick="onSubmitButtonClick"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choise4" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="125dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:text="Word practice"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fragmentContainerView"
+        app:layout_constraintTop_toTopOf="@+id/fragmentContainerView" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Car\n[ka:]"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

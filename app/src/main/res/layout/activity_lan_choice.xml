@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lan_choice">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.mobiledesign.ui.main.ActivityLoginFragment"
+        android:layout_width="410dp"
+        android:layout_height="70dp"
+        android:background="@color/purple"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/purple"
+        android:onClick="onbackButtonClick"
+        app:srcCompat="@drawable/back_button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/lan1"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="340dp"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Russian"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/lan2"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lan1" />
+
+    <Button
+        android:id="@+id/lan3"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Chinese"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lan2" />
+
+    <Button
+        android:id="@+id/lan4"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Belarus"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lan3" />
+
+    <Button
+        android:id="@+id/lan5"
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Kazakh"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lan4" />
+
+    <Button
+        android:id="@+id/submit"
+
+        android:layout_width="365dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="112dp"
+
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Choose"
+        android:onClick="onSubmitButtonClick"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lan5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="155dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Language select"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fragmentContainerView"
+        app:layout_constraintTop_toTopOf="@+id/fragmentContainerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
